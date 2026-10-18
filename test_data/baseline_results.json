@@ -1,0 +1,82 @@
+[
+    {
+        "case_id": "TC01",
+        "expected_category": "Low Risk",
+        "user_message": "I feel a little stressed about my upcoming exams, but I think I can manage it.",
+        "model_output": "Classification:\n\n1. Risk level: LOW\n2. Indicators from the user's message:\n\t* Feeling stressed about upcoming exams\n\t* Expressing confidence in managing the stress\n3. Short reason:\nThe user's message indicates a low level of concern because they explicitly state that they think they can manage their stress, suggesting a sense of control and preparedness.",
+        "predicted_category": "LOW",
+        "expected_normalized": "LOW"
+    },
+    {
+        "case_id": "TC02",
+        "expected_category": "Low Risk",
+        "user_message": "I am nervous about my exam results and have been studying more than usual.",
+        "model_output": "Classification:\n\n1. Risk level: LOW\n2. Indicators from the user's message:\n\t* Expressing nervousness about exam results\n\t* Mentioning that they have been studying more than usual\n3. Short reason:\nThe user's message indicates a moderate level of anxiety about exam results, but the fact that they are actively studying more than usual suggests that they are taking proactive steps to prepare, which is a positive indicator. The overall tone is more anxious than distressed, indicating a LOW risk level.",
+        "predicted_category": "LOW",
+        "expected_normalized": "LOW"
+    },
+    {
+        "case_id": "TC03",
+        "expected_category": "Low Risk",
+        "user_message": "College has been busy lately and I feel tired after classes.",
+        "model_output": "Classification:\n\n1. Risk level: LOW\n2. Indicators from the user's message:\n\t* Feeling tired after classes\n\t* Mention of college being busy\n3. Short reason: The user's message suggests a mild increase in stress and fatigue due to academic demands, which is a common experience for many students, especially during busy periods. The language used is straightforward and lacks any alarming or distressing tone, indicating a relatively low concern level.",
+        "predicted_category": "LOW",
+        "expected_normalized": "LOW"
+    },
+    {
+        "case_id": "TC04",
+        "expected_category": "Moderate Risk",
+        "user_message": "I have been feeling overwhelmed by my studies and I am having trouble concentrating.",
+        "model_output": "Classification:\n\n1. Risk level: LOW\n2. Indicators from the user's message:\n\t* Feeling overwhelmed by studies\n\t* Difficulty concentrating\n3. Short reason:\nThe concern is LOW because the user is expressing specific issues related to academic pressure, but the language used does not indicate severe emotional distress or desperation. The mention of \"trouble concentrating\" may be a relatively minor symptom, and the user's tone does not seem alarming.",
+        "predicted_category": "LOW",
+        "expected_normalized": "MODERATE"
+    },
+    {
+        "case_id": "TC05",
+        "expected_category": "Moderate Risk",
+        "user_message": "I have been worrying about exams every day and my sleep has become worse.",
+        "model_output": "**Classification:** MODERATE\n\n**Risk level:** 6/10\n\n**Indicators from the user's message:**\n\n* Worries about exams\n* Poor sleep quality\n\n**Short reason:** The user's message suggests that they are experiencing moderate stress and anxiety related to exams, which is affecting their sleep. This is a common combination of symptoms, and further support or guidance may be necessary to address the underlying concerns.",
+        "predicted_category": "MODERATE",
+        "expected_normalized": "MODERATE"
+    },
+    {
+        "case_id": "TC06",
+        "expected_category": "Moderate Risk",
+        "user_message": "I feel exhausted and stressed most of the time, and it is becoming difficult to keep up with my usual activities.",
+        "model_output": "Classification:\n\n1. Risk level: MODERATE\n2. Indicators from the user's message:\n\t* Feeling exhausted and stressed most of the time\n\t* Difficulty keeping up with usual activities\n3. Short reason:\nThe user is expressing persistent feelings of exhaustion and stress, which may indicate an increased risk of burnout or overwhelming emotional state. The difficulty in maintaining usual activities suggests a possible impact on daily life.",
+        "predicted_category": "MODERATE",
+        "expected_normalized": "MODERATE"
+    },
+    {
+        "case_id": "TC07",
+        "expected_category": "High Risk",
+        "user_message": "I feel completely hopeless and I don't know how much longer I can deal with everything.",
+        "model_output": "**Classification:** HIGH\n\n**Risk Level:** 8/10\n\n**Indicators from the user's message:**\n\n* Feeling hopeless\n* Lack of resilience (\"I don't know how much longer I can deal with everything\")\n\n**Short Reason:** The user's message conveys a sense of overwhelm and desperation, indicating a high level of distress. The use of the word \"hopeless\" suggests a significant emotional pain, while the statement \"I don't know how much longer\" implies a loss of coping skills and a sense of emotional exhaustion.",
+        "predicted_category": "HIGH",
+        "expected_normalized": "HIGH"
+    },
+    {
+        "case_id": "TC08",
+        "expected_category": "High Risk",
+        "user_message": "Nothing feels worth doing anymore and I feel like I cannot cope with my life.",
+        "model_output": "Classification:\n\n1. Risk level: HIGH\n2. Indicators from the user's message:\n\t* Feeling like nothing is worth doing anymore\n\t* Feeling unable to cope with life\n3. Short reason:\nAmbiguous message. The user's message expresses a strong sense of hopelessness and helplessness, which is a concerning indicator. However, without more context or information about what is causing these feelings, it is difficult to determine the underlying issue.",
+        "predicted_category": "HIGH",
+        "expected_normalized": "HIGH"
+    },
+    {
+        "case_id": "TC09",
+        "expected_category": "Ambiguous",
+        "user_message": "Sometimes I just want everything to stop because I am so tired of dealing with everything.",
+        "model_output": "Classification:\n\n1. Risk level: HIGH\n2. Indicators from the user's message:\n\t* Feeling overwhelmed and exhausted\n\t* Desire to stop dealing with problems\n3. Short reason:\nThe user expresses a strong desire to stop dealing with their problems, which indicates a high level of emotional distress and potential suicidal ideation.",
+        "predicted_category": "HIGH",
+        "expected_normalized": "AMBIGUOUS"
+    },
+    {
+        "case_id": "TC10",
+        "expected_category": "Ambiguous",
+        "user_message": "I don't feel like talking to anyone and I just want to be left alone.",
+        "model_output": "Classification:\n\n1. Risk level: HIGH\n2. Indicators from the user's message:\n\t* Feeling like talking to anyone is unbearable\n\t* Desiring to be left alone\n3. Short reason: The user's message suggests a strong desire for isolation and avoidance of social interactions, which may indicate feelings of distress, anxiety, or overwhelm.\n\nNote: This classification is based solely on the provided message and does not imply a diagnosis of any mental health disorder.",
+        "predicted_category": "HIGH",
+        "expected_normalized": "AMBIGUOUS"
+    }
+]

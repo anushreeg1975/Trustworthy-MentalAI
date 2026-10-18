@@ -1,0 +1,19 @@
+{
+  "experiment": "Semantic vs safety-aware retrieval",
+  "test_cases": 10,
+  "baseline_safety_passage_top2": 3,
+  "safety_aware_safety_passage_top2": 4,
+  "baseline_coverage": 0.3,
+  "safety_aware_coverage": 0.4,
+  "improved_cases": [
+    "TC08"
+  ],
+  "regressed_cases": [],
+  "limitations": [
+    "Only 10 hand-authored test cases",
+    "Temporary demonstration knowledge base",
+    "Safety passage retrieval is not clinical risk detection",
+    "Expected behavior requires independent annotation",
+    "Results need replication on a larger, diverse test set"
+  ]
+}

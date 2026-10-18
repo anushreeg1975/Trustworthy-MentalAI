@@ -1,0 +1,20 @@
+{
+  "experiment": "Integrated pipeline regression test",
+  "version": 1,
+  "cases_tested": 3,
+  "passed": 3,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "categories": [
+    "ROUTINE_SUPPORT",
+    "REVIEW",
+    "URGENT_SAFETY_REVIEW"
+  ],
+  "limitations": [
+    "Only three regression cases",
+    "Hand-authored test messages",
+    "Rule-based assessment may miss unseen expressions",
+    "Not clinically validated",
+    "Knowledge base contains temporary demonstration content"
+  ]
+}

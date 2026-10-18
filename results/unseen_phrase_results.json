@@ -1,0 +1,32 @@
+{
+  "experiment": "Unseen-phrase generalization",
+  "method": "Phrase-based safety trigger",
+  "cases_tested": 5,
+  "observations": [
+    {
+      "message": "I feel like there is no point in anything anymore.",
+      "triggered": false
+    },
+    {
+      "message": "I am struggling to find a reason to keep trying.",
+      "triggered": false
+    },
+    {
+      "message": "I wish I could disappear for a while.",
+      "triggered": false
+    },
+    {
+      "message": "I feel emotionally exhausted and isolated.",
+      "triggered": false
+    },
+    {
+      "message": "I am disappointed about my grades, but I will try again tomorrow.",
+      "triggered": false
+    }
+  ],
+  "limitations": [
+    "Exploratory, hand-authored test cases",
+    "No clinically validated labels",
+    "Results do not establish real-world safety performance"
+  ]
+}

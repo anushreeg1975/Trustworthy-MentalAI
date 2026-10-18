@@ -1,0 +1,14 @@
+{
+  "experiment": "Safety-aware retrieval: phrase trigger",
+  "version": 2,
+  "test_count": 6,
+  "passed": 6,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "limitations": [
+    "Small, hand-authored test set",
+    "Expected labels are not clinically validated",
+    "Phrase-based trigger may miss unseen paraphrases",
+    "Safety passage prioritization does not establish clinical risk"
+  ]
+}

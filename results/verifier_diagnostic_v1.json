@@ -1,0 +1,38 @@
+{
+  "experiment": "Initial claim-level evidence verifier diagnostic",
+  "model": "llama3.2:3b",
+  "test_cases": 4,
+  "correct": 4,
+  "results": [
+    {
+      "case_id": "V01",
+      "expected": "SUPPORTED",
+      "predicted": "SUPPORTED",
+      "explanation": "The evidence explicitly states that difficulty sleeping can occur during periods of stress, and it also mentions that persistent sleep problems may be an indicator of distress. This suggests a clear connection between stress and difficulty sleeping."
+    },
+    {
+      "case_id": "V02",
+      "expected": "SUPPORTED",
+      "predicted": "SUPPORTED",
+      "explanation": "The evidence explicitly mentions that stress is a common response to challenging situations, which includes academic pressure, making the claim that academic pressure can be a challenging situation associated with stress supported."
+    },
+    {
+      "case_id": "V03",
+      "expected": "UNSUPPORTED",
+      "predicted": "UNSUPPORTED",
+      "explanation": "The evidence does not explicitly state that exam stress is the cause of sleep problems. It only mentions that difficulty sleeping can occur during periods of stress and that persistent sleep problems may be an indicator of distress. There is no direct link made between exam stress and sleep problems in the provided evidence."
+    },
+    {
+      "case_id": "V04",
+      "expected": "UNSUPPORTED",
+      "predicted": "UNSUPPORTED",
+      "explanation": "The evidence states that difficulty sleeping can occur during periods of stress, but it does not explicitly state that stress always causes sleep problems in every teenager. The evidence does not provide enough information to make a conclusion about every individual."
+    }
+  ],
+  "limitations": [
+    "Only four manually constructed test cases",
+    "Expected labels were defined for these specific examples",
+    "Not an independent or clinically validated evaluation",
+    "A language model can make verification errors"
+  ]
+}
