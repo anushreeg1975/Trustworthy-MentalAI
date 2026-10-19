@@ -1,0 +1,159 @@
+{
+  "experiment": "additional_safety_rules_revision_v1",
+  "total_cases": 20,
+  "results": [
+    {
+      "case_id": "EX01",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX02",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX03",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX04",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX05",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX06",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX07",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX08",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX09",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX10",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX11",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "EX12",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "EX13",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "EX14",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "EX15",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "EX16",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX17",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX18",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX19",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "EX20",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    }
+  ],
+  "category_summary": {
+    "Ambiguous": {
+      "total": 5,
+      "triggered": 0,
+      "not_triggered": 5
+    },
+    "HarmlessWording": {
+      "total": 5,
+      "triggered": 0,
+      "not_triggered": 5
+    },
+    "Routine": {
+      "total": 5,
+      "triggered": 0,
+      "not_triggered": 5
+    },
+    "SafetyConcern": {
+      "total": 5,
+      "triggered": 5,
+      "not_triggered": 0
+    }
+  },
+  "added_patterns": [
+    "thinking about ending my life",
+    "do not feel safe with myself",
+    "thinking about suicide",
+    "harm myself"
+  ],
+  "limitations": [
+    "Rules were revised after inspecting these cases.",
+    "The same cases were reused for post-revision testing.",
+    "Phrase matching may miss unseen wording and is not clinically validated."
+  ]
+}

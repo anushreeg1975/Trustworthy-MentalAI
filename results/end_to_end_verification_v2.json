@@ -1,0 +1,81 @@
+{
+  "experiment": "End-to-end claim verification diagnostic v2",
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "dataset_type": "Manually constructed development cases",
+  "total_cases": 8,
+  "exact_matches": 8,
+  "agreement": 1.0,
+  "annotation_changes": [
+    {
+      "case_id": "E08",
+      "original_label": "NOT_VERIFIED",
+      "revised_label": "CONTRADICTED",
+      "reason": "The selected evidence explicitly cautions against making a diagnosis from a single conversation."
+    }
+  ],
+  "results": [
+    {
+      "case_id": "E01",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "nli_prediction": "ENTAILMENT",
+      "passed": true
+    },
+    {
+      "case_id": "E02",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "nli_prediction": "ENTAILMENT",
+      "passed": true
+    },
+    {
+      "case_id": "E03",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "nli_prediction": "ENTAILMENT",
+      "passed": true
+    },
+    {
+      "case_id": "E04",
+      "expected": "NOT_VERIFIED",
+      "actual": "NOT_VERIFIED",
+      "nli_prediction": "NEUTRAL",
+      "passed": true
+    },
+    {
+      "case_id": "E05",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "nli_prediction": "CONTRADICTION",
+      "passed": true
+    },
+    {
+      "case_id": "E06",
+      "expected": "NOT_VERIFIED",
+      "actual": "NOT_VERIFIED",
+      "nli_prediction": "NEUTRAL",
+      "passed": true
+    },
+    {
+      "case_id": "E07",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "nli_prediction": "ENTAILMENT",
+      "passed": true
+    },
+    {
+      "case_id": "E08",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "nli_prediction": "CONTRADICTION",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Only eight manually constructed cases were evaluated.",
+    "E08 was relabelled after inspecting the model prediction.",
+    "The results are not an independent estimate of general accuracy.",
+    "Evaluation on a larger, independently labelled dataset is needed.",
+    "This experiment does not establish clinical or safety reliability."
+  ]
+}

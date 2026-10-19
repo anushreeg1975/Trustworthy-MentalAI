@@ -1,0 +1,95 @@
+{
+  "experiment": "retrieval_gate_comparison_v1",
+  "threshold": 0.3,
+  "number_of_cases": 11,
+  "cases_changed": [
+    "RF01",
+    "RF02"
+  ],
+  "results": [
+    {
+      "case_id": "E01",
+      "expected_status": "SUPPORTED",
+      "original_status": "SUPPORTED",
+      "gated_status": "SUPPORTED",
+      "similarity": 0.8669829368591309
+    },
+    {
+      "case_id": "E02",
+      "expected_status": "SUPPORTED",
+      "original_status": "SUPPORTED",
+      "gated_status": "SUPPORTED",
+      "similarity": 0.7925332188606262
+    },
+    {
+      "case_id": "E03",
+      "expected_status": "SUPPORTED",
+      "original_status": "SUPPORTED",
+      "gated_status": "SUPPORTED",
+      "similarity": 0.9071621894836426
+    },
+    {
+      "case_id": "E04",
+      "expected_status": "NOT_VERIFIED",
+      "original_status": "NOT_VERIFIED",
+      "gated_status": "NOT_VERIFIED",
+      "similarity": 0.6991572380065918
+    },
+    {
+      "case_id": "E05",
+      "expected_status": "CONTRADICTED",
+      "original_status": "CONTRADICTED",
+      "gated_status": "CONTRADICTED",
+      "similarity": 0.5141271352767944
+    },
+    {
+      "case_id": "E06",
+      "expected_status": "NOT_VERIFIED",
+      "original_status": "NOT_VERIFIED",
+      "gated_status": "NOT_VERIFIED",
+      "similarity": 0.5978240966796875
+    },
+    {
+      "case_id": "E07",
+      "expected_status": "SUPPORTED",
+      "original_status": "SUPPORTED",
+      "gated_status": "SUPPORTED",
+      "similarity": 0.5433697700500488
+    },
+    {
+      "case_id": "E08",
+      "expected_status": "CONTRADICTED",
+      "original_status": "CONTRADICTED",
+      "gated_status": "CONTRADICTED",
+      "similarity": 0.48230913281440735
+    },
+    {
+      "case_id": "RF01",
+      "expected_status": "NOT_VERIFIED",
+      "original_status": "NOT_VERIFIED",
+      "gated_status": "RETRIEVAL_TOO_WEAK",
+      "similarity": 0.12862244248390198
+    },
+    {
+      "case_id": "RF02",
+      "expected_status": "NOT_VERIFIED",
+      "original_status": "NOT_VERIFIED",
+      "gated_status": "RETRIEVAL_TOO_WEAK",
+      "similarity": 0.11422359943389893
+    },
+    {
+      "case_id": "RF03",
+      "expected_status": "NOT_VERIFIED",
+      "original_status": "NOT_VERIFIED",
+      "gated_status": "NOT_VERIFIED",
+      "similarity": 0.5131348371505737
+    }
+  ],
+  "limitations": [
+    "Small manually constructed test set",
+    "Threshold explored on the same cases used for comparison",
+    "Similarity is not a calibrated probability of relevance",
+    "RF03 demonstrates that a related passage may not support a claim",
+    "Independent evaluation is still required"
+  ]
+}

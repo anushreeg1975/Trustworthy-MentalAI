@@ -1,0 +1,136 @@
+{
+  "experiment": "retrieval_gate_v2_comparison_v1",
+  "threshold": 0.3,
+  "total_cases": 11,
+  "nli_executed": 9,
+  "exact_matches_using_selected_labels": 8,
+  "scorable_cases": 11,
+  "agreement": 0.7272727272727273,
+  "label_discrepancies": [
+    {
+      "case_id": "E08",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "CONTRADICTED"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "E01",
+      "expected_status": "SUPPORTED",
+      "saved_expected_status": "SUPPORTED",
+      "v2_status": "SUPPORTED",
+      "exact_match": true,
+      "similarity": 0.8669828176498413,
+      "nli_executed": true,
+      "nli_prediction": "ENTAILMENT"
+    },
+    {
+      "case_id": "E02",
+      "expected_status": "SUPPORTED",
+      "saved_expected_status": "SUPPORTED",
+      "v2_status": "SUPPORTED",
+      "exact_match": true,
+      "similarity": 0.7925330996513367,
+      "nli_executed": true,
+      "nli_prediction": "ENTAILMENT"
+    },
+    {
+      "case_id": "E03",
+      "expected_status": "SUPPORTED",
+      "saved_expected_status": "SUPPORTED",
+      "v2_status": "SUPPORTED",
+      "exact_match": true,
+      "similarity": 0.9071621894836426,
+      "nli_executed": true,
+      "nli_prediction": "ENTAILMENT"
+    },
+    {
+      "case_id": "E04",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "NOT_VERIFIED",
+      "v2_status": "NOT_VERIFIED",
+      "exact_match": true,
+      "similarity": 0.6991572380065918,
+      "nli_executed": true,
+      "nli_prediction": "NEUTRAL"
+    },
+    {
+      "case_id": "E05",
+      "expected_status": "CONTRADICTED",
+      "saved_expected_status": "CONTRADICTED",
+      "v2_status": "NOT_VERIFIED",
+      "exact_match": false,
+      "similarity": 0.514127254486084,
+      "nli_executed": true,
+      "nli_prediction": "CONTRADICTION"
+    },
+    {
+      "case_id": "E06",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "NOT_VERIFIED",
+      "v2_status": "NOT_VERIFIED",
+      "exact_match": true,
+      "similarity": 0.597824215888977,
+      "nli_executed": true,
+      "nli_prediction": "NEUTRAL"
+    },
+    {
+      "case_id": "E07",
+      "expected_status": "SUPPORTED",
+      "saved_expected_status": "SUPPORTED",
+      "v2_status": "SUPPORTED",
+      "exact_match": true,
+      "similarity": 0.5433698892593384,
+      "nli_executed": true,
+      "nli_prediction": "ENTAILMENT"
+    },
+    {
+      "case_id": "E08",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "CONTRADICTED",
+      "v2_status": "NOT_VERIFIED",
+      "exact_match": true,
+      "similarity": 0.4823090732097626,
+      "nli_executed": true,
+      "nli_prediction": "CONTRADICTION"
+    },
+    {
+      "case_id": "RF01",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "NOT_VERIFIED",
+      "v2_status": "RETRIEVAL_TOO_WEAK",
+      "exact_match": false,
+      "similarity": 0.1286224126815796,
+      "nli_executed": false,
+      "nli_prediction": NaN
+    },
+    {
+      "case_id": "RF02",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "NOT_VERIFIED",
+      "v2_status": "RETRIEVAL_TOO_WEAK",
+      "exact_match": false,
+      "similarity": 0.11422368139028549,
+      "nli_executed": false,
+      "nli_prediction": NaN
+    },
+    {
+      "case_id": "RF03",
+      "expected_status": "NOT_VERIFIED",
+      "saved_expected_status": "NOT_VERIFIED",
+      "v2_status": "NOT_VERIFIED",
+      "exact_match": true,
+      "similarity": 0.5131348371505737,
+      "nli_executed": true,
+      "nli_prediction": "NEUTRAL"
+    }
+  ],
+  "limitations": [
+    "The cases are manually constructed and not independent validation.",
+    "The retrieval threshold is exploratory and was examined on these cases.",
+    "E08 has conflicting expected labels in notebook and saved experiment.",
+    "RETRIEVAL_TOO_WEAK is an abstention outcome, not a claim truth label.",
+    "NLI logits and cosine similarity are not calibrated probabilities.",
+    "The current policy maps contradiction predictions to NOT_VERIFIED."
+  ]
+}

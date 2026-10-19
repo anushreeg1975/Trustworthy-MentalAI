@@ -1,0 +1,31 @@
+{
+  "experiment": "contradiction_diagnostic_policy_v1",
+  "total_cases": 2,
+  "passed": 2,
+  "results": [
+    {
+      "case_id": "E05",
+      "claim": "Stress never affects sleep.",
+      "expected_status": "NOT_VERIFIED",
+      "expected_diagnostic": "CONTRADICTION_SIGNAL",
+      "actual_status": "NOT_VERIFIED",
+      "actual_diagnostic": "CONTRADICTION_SIGNAL",
+      "passed": true
+    },
+    {
+      "case_id": "E08",
+      "claim": "The evidence proves that every overwhelmed teenager has a mental disorder.",
+      "expected_status": "NOT_VERIFIED",
+      "expected_diagnostic": "CONTRADICTION_SIGNAL",
+      "actual_status": "NOT_VERIFIED",
+      "actual_diagnostic": "CONTRADICTION_SIGNAL",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Only two manually selected cases were tested.",
+    "These are functional regression checks, not independent evaluation.",
+    "NLI predictions are diagnostic signals, not proof of factual truth.",
+    "The knowledge base is a small prototype and needs sourced expansion."
+  ]
+}

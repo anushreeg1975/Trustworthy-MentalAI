@@ -1,0 +1,29 @@
+{
+  "experiment": "related_evidence_claim_specificity_v1",
+  "purpose": "Test whether the pipeline distinguishes direct evidence support from a broader claim not established by that evidence.",
+  "cases": [
+    {
+      "test_id": "RF03A",
+      "claim": "Difficulty sleeping can occur during periods of stress.",
+      "expected_status": "SUPPORTED",
+      "actual_status": "SUPPORTED",
+      "similarity": 0.9071621894836426,
+      "nli_prediction": "ENTAILMENT"
+    },
+    {
+      "test_id": "RF03B",
+      "claim": "Every teenager who sleeps badly has an anxiety disorder.",
+      "expected_status": "NOT_VERIFIED",
+      "actual_status": "NOT_VERIFIED",
+      "similarity": 0.5131348371505737,
+      "nli_prediction": "NEUTRAL"
+    }
+  ],
+  "passed": 2,
+  "total": 2,
+  "limitations": [
+    "Only two manually constructed claims were tested.",
+    "The claims were evaluated using the existing knowledge base.",
+    "This is not independent or clinical validation."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "experiment": "Claim verifier diagnostic v2",
+  "model": "llama3.2:3b",
+  "temperature": 0,
+  "test_cases": 8,
+  "correct_predictions": 2,
+  "agreement": 0.25,
+  "results": [
+    {
+      "case_id": "V05",
+      "claim": "Persistent sleep problems may warrant further attention.",
+      "expected": "SUPPORTED",
+      "predicted": "PARTIALLY_SUPPORTED",
+      "correct": false,
+      "explanation": "The evidence supports the idea that persistent sleep problems may warrant further attention, but it specifically mentions that it may be an indicator of distress, rather than the sleep problems themselves."
+    },
+    {
+      "case_id": "V06",
+      "claim": "Academic pressure always causes severe psychological distress.",
+      "expected": "UNSUPPORTED",
+      "predicted": "UNSUPPORTED",
+      "correct": true,
+      "explanation": "The evidence mentions that stress is a common response to challenging situations, but it does not specifically state that academic pressure always causes severe psychological distress."
+    },
+    {
+      "case_id": "V07",
+      "claim": "Feeling overwhelmed can indicate difficulty coping with current demands.",
+      "expected": "SUPPORTED",
+      "predicted": "PARTIALLY_SUPPORTED",
+      "correct": false,
+      "explanation": "The evidence supports the idea that feeling overwhelmed is related to difficulty coping, but it specifically mentions 'current demands' which may not be the same as 'current situation' or 'overall situation'. The claim is partially supported, but the wording is not identical."
+    },
+    {
+      "case_id": "V08",
+      "claim": "The evidence proves that the user has depression.",
+      "expected": "UNSUPPORTED",
+      "predicted": "UNSUPPORTED",
+      "correct": true,
+      "explanation": "The evidence does not establish that the user has depression, as it only advises against making a diagnosis based on a single conversation, without providing any information about the user's symptoms or condition."
+    },
+    {
+      "case_id": "V09",
+      "claim": "Stress can affect emotional well-being and daily functioning.",
+      "expected": "SUPPORTED",
+      "predicted": "PARTIALLY_SUPPORTED",
+      "correct": false,
+      "explanation": "The evidence supports the claim that stress can affect emotional well-being and daily functioning, but it does not address the scope of the claim (i.e., it does not mention stress as a common response to all types of challenging situations)."
+    },
+    {
+      "case_id": "V10",
+      "claim": "Difficulty sleeping can occur during periods of stress.",
+      "expected": "UNSUPPORTED",
+      "predicted": "PARTIALLY_SUPPORTED",
+      "correct": false,
+      "explanation": "The evidence supports the existence of difficulty sleeping during periods of stress, but it does not explicitly state that stress is a direct cause of difficulty sleeping."
+    },
+    {
+      "case_id": "V11",
+      "claim": "Feeling overwhelmed can indicate difficulty coping, and it proves the person has a mental disorder.",
+      "expected": "PARTIALLY_SUPPORTED",
+      "predicted": "UNSUPPORTED",
+      "correct": false,
+      "explanation": "The evidence does not establish that feeling overwhelmed directly proves the person has a mental disorder. The evidence only mentions that feeling overwhelmed can be a sign of difficulty coping, and a supportive response should avoid making a diagnosis based on a single conversation."
+    },
+    {
+      "case_id": "V12",
+      "claim": "Stress never affects sleep.",
+      "expected": "CONTRADICTED",
+      "predicted": "UNSUPPORTED",
+      "correct": false,
+      "explanation": "The evidence states that difficulty sleeping can occur during periods of stress, which implies that stress can negatively impact sleep. However, the claim states that stress never affects sleep, which is directly contradicted by the evidence."
+    }
+  ],
+  "limitations": [
+    "Eight manually constructed cases only",
+    "Expected labels are preliminary annotations",
+    "Cases are not an independent benchmark",
+    "The language model may interpret paraphrases too strictly",
+    "Agreement does not establish clinical reliability"
+  ]
+}

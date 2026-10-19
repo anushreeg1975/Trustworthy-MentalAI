@@ -1,0 +1,45 @@
+{
+  "experiment": "Safety-aware pipeline integration test v1",
+  "total_cases": 4,
+  "passed": 4,
+  "failed": 0,
+  "results": [
+    {
+      "case_id": "F01",
+      "expected_status": "URGENT_SAFETY_REVIEW",
+      "actual_status": "URGENT_SAFETY_REVIEW",
+      "expected_verification": false,
+      "actual_verification": false,
+      "passed": true
+    },
+    {
+      "case_id": "F02",
+      "expected_status": "SAFETY_REVIEW",
+      "actual_status": "SAFETY_REVIEW",
+      "expected_verification": false,
+      "actual_verification": false,
+      "passed": true
+    },
+    {
+      "case_id": "F03",
+      "expected_status": "SAFETY_REVIEW",
+      "actual_status": "SAFETY_REVIEW",
+      "expected_verification": false,
+      "actual_verification": false,
+      "passed": true
+    },
+    {
+      "case_id": "F04",
+      "expected_status": "CLEAR_BY_RULES",
+      "actual_status": "CLEAR_BY_RULES",
+      "expected_verification": true,
+      "actual_verification": true,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Only four manually constructed integration cases were tested.",
+    "The phrase-based safety detector may miss unfamiliar expressions.",
+    "Passing tests does not establish real-world safety or clinical reliability."
+  ]
+}

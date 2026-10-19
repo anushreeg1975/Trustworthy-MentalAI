@@ -1,0 +1,50 @@
+{
+  "experiment": "restored_pipeline_regression_v1",
+  "total_cases": 4,
+  "safety_passed": 4,
+  "verification_passed": 4,
+  "results": [
+    {
+      "case_id": "RG01",
+      "expected_safety": "CLEAR_BY_RULES",
+      "actual_safety": "CLEAR_BY_RULES",
+      "expected_verification": "SUPPORTED",
+      "actual_verification": "SUPPORTED",
+      "safety_pass": true,
+      "verification_pass": true
+    },
+    {
+      "case_id": "RG02",
+      "expected_safety": "URGENT_SAFETY_REVIEW",
+      "actual_safety": "URGENT_SAFETY_REVIEW",
+      "expected_verification": null,
+      "actual_verification": null,
+      "safety_pass": true,
+      "verification_pass": true
+    },
+    {
+      "case_id": "RG03",
+      "expected_safety": "CLEAR_BY_RULES",
+      "actual_safety": "CLEAR_BY_RULES",
+      "expected_verification": "RETRIEVAL_TOO_WEAK",
+      "actual_verification": "RETRIEVAL_TOO_WEAK",
+      "safety_pass": true,
+      "verification_pass": true
+    },
+    {
+      "case_id": "RG04",
+      "expected_safety": "CLEAR_BY_RULES",
+      "actual_safety": "CLEAR_BY_RULES",
+      "expected_verification": "NOT_VERIFIED",
+      "actual_verification": "NOT_VERIFIED",
+      "safety_pass": true,
+      "verification_pass": true
+    }
+  ],
+  "limitations": [
+    "Only four manually designed regression cases were tested.",
+    "These cases are functional checks, not independent evaluation.",
+    "Safety phrase matching is not clinically validated.",
+    "The retrieval threshold is exploratory."
+  ]
+}

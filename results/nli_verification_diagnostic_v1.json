@@ -1,0 +1,97 @@
+{
+  "experiment": "Initial NLI claim verification diagnostic",
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "test_cases": 8,
+  "directly_comparable_cases": 7,
+  "matching_predictions_on_comparable_cases": 7,
+  "provisional_agreement": 1.0,
+  "limitations": [
+    "Only eight manually constructed test cases were evaluated.",
+    "V11 is partially supported, which the three-label NLI model cannot represent directly.",
+    "Neutral means neither entailment nor contradiction was established; it does not prove a claim false.",
+    "Raw NLI scores are not calibrated confidence probabilities.",
+    "Independent evaluation is needed before making general performance claims."
+  ],
+  "results": [
+    {
+      "claim": "Persistent sleep problems may warrant further attention.",
+      "evidence": "Persistent sleep problems may be an indicator that a young person is experiencing distress and may warrant further attention.",
+      "prediction": "ENTAILMENT",
+      "contradiction_score": -3.6149849891662598,
+      "entailment_score": 4.121809482574463,
+      "neutral_score": -0.6380969285964966,
+      "case_id": "V05",
+      "expected": "SUPPORTED"
+    },
+    {
+      "claim": "Academic pressure always causes severe psychological distress.",
+      "evidence": "Stress is a common response to challenging situations such as academic pressure, social difficulties, or major changes.",
+      "prediction": "NEUTRAL",
+      "contradiction_score": -2.0744619369506836,
+      "entailment_score": -2.625910997390747,
+      "neutral_score": 5.412810802459717,
+      "case_id": "V06",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "claim": "Feeling overwhelmed can indicate difficulty coping with current demands.",
+      "evidence": "Feeling overwhelmed can be a sign that a young person is having difficulty coping with current demands.",
+      "prediction": "ENTAILMENT",
+      "contradiction_score": -4.124780654907227,
+      "entailment_score": 4.703225612640381,
+      "neutral_score": -0.9412151575088501,
+      "case_id": "V07",
+      "expected": "SUPPORTED"
+    },
+    {
+      "claim": "The evidence proves that the user has depression.",
+      "evidence": "A supportive response should avoid making a diagnosis based on a single conversation.",
+      "prediction": "NEUTRAL",
+      "contradiction_score": 1.1902830600738525,
+      "entailment_score": -5.042069911956787,
+      "neutral_score": 4.371526718139648,
+      "case_id": "V08",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "claim": "Stress can affect emotional well-being and daily functioning.",
+      "evidence": "Stress is a common response to challenging situations such as academic pressure. Persistent or intense stress can affect a young person's emotional well-being and daily functioning.",
+      "prediction": "ENTAILMENT",
+      "contradiction_score": -4.667338848114014,
+      "entailment_score": 4.15730094909668,
+      "neutral_score": 0.34133824706077576,
+      "case_id": "V09",
+      "expected": "SUPPORTED"
+    },
+    {
+      "claim": "Difficulty sleeping can occur during periods of stress.",
+      "evidence": "Stress is a common response to challenging situations such as academic pressure, social difficulties, or major changes.",
+      "prediction": "NEUTRAL",
+      "contradiction_score": -1.9388391971588135,
+      "entailment_score": -2.026890516281128,
+      "neutral_score": 4.608095645904541,
+      "case_id": "V10",
+      "expected": "UNSUPPORTED"
+    },
+    {
+      "claim": "Feeling overwhelmed can indicate difficulty coping, and it proves the person has a mental disorder.",
+      "evidence": "Feeling overwhelmed can be a sign that a young person is having difficulty coping with current demands. A supportive response should avoid making a diagnosis based on a single conversation.",
+      "prediction": "NEUTRAL",
+      "contradiction_score": -2.3069052696228027,
+      "entailment_score": -2.5880889892578125,
+      "neutral_score": 5.461742877960205,
+      "case_id": "V11",
+      "expected": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "claim": "Stress never affects sleep.",
+      "evidence": "Difficulty sleeping can occur during periods of stress.",
+      "prediction": "CONTRADICTION",
+      "contradiction_score": 6.6675262451171875,
+      "entailment_score": -4.370734691619873,
+      "neutral_score": -2.1169657707214355,
+      "case_id": "V12",
+      "expected": "CONTRADICTED"
+    }
+  ]
+}

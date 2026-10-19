@@ -1,0 +1,133 @@
+{
+  "experiment": "heldout_safety_rules_revision_v1",
+  "cases": [
+    {
+      "case_id": "H01",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H02",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H03",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H04",
+      "category": "Routine",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H05",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H06",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H07",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H08",
+      "category": "Ambiguous",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H09",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "H10",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "H11",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "H12",
+      "category": "SafetyConcern",
+      "safety_status": "URGENT_SAFETY_REVIEW",
+      "triggered": true
+    },
+    {
+      "case_id": "H13",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H14",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H15",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    },
+    {
+      "case_id": "H16",
+      "category": "HarmlessWording",
+      "safety_status": "CONTINUE_NORMAL_PIPELINE",
+      "triggered": false
+    }
+  ],
+  "category_summary": {
+    "Ambiguous": {
+      "total": 4,
+      "triggered": 0,
+      "not_triggered": 4
+    },
+    "HarmlessWording": {
+      "total": 4,
+      "triggered": 0,
+      "not_triggered": 4
+    },
+    "Routine": {
+      "total": 4,
+      "triggered": 0,
+      "not_triggered": 4
+    },
+    "SafetyConcern": {
+      "total": 4,
+      "triggered": 4,
+      "not_triggered": 0
+    }
+  },
+  "changes": [
+    "thoughts about suicide",
+    "at risk of hurting myself",
+    "keep myself safe"
+  ],
+  "limitations": [
+    "Rules were revised after inspecting the held-out cases.",
+    "The same cases were reused for the post-change test.",
+    "Phrase matching cannot establish clinical safety or detect every concerning message."
+  ]
+}
