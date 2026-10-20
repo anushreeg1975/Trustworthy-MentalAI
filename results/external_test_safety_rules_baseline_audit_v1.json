@@ -1,0 +1,44 @@
+{
+  "experiment": "Previously evaluated English test-set safety-rule baseline",
+  "version": "v1",
+  "dataset": "KHP Youth Mental Health Safety Guardrail",
+  "evaluation_scope": "English-language subset of the existing test split",
+  "sample_count": 112,
+  "actual_low_risk": 48,
+  "actual_high_risk": 64,
+  "confusion_matrix": {
+    "rows": [
+      "actual_low_risk",
+      "actual_high_risk"
+    ],
+    "columns": [
+      "predicted_low_risk",
+      "predicted_high_risk"
+    ],
+    "values": [
+      [
+        48,
+        0
+      ],
+      [
+        62,
+        2
+      ]
+    ]
+  },
+  "metrics": {
+    "accuracy": 0.44642857142857145,
+    "high_risk_precision": 1.0,
+    "high_risk_recall": 0.03125,
+    "high_risk_f1": 0.06060606060606061
+  },
+  "interpretation": "The phrase-based safety-rule baseline detected 2 of 64 high-risk examples and missed 62. Its low high-risk recall makes it inadequate as a stand-alone high-risk detector on this evaluation subset.",
+  "evaluation_status": "Previously evaluated; not an untouched test set",
+  "tuning_policy": "Do not use this split for further rule, threshold, or model tuning.",
+  "limitations": [
+    "The dataset is synthetic and is not clinical validation.",
+    "This result does not establish real-world safety or effectiveness.",
+    "The test split has already been inspected."
+  ],
+  "recorded_at_utc": "2026-10-20T17:37:12.978888+00:00"
+}
