@@ -1,0 +1,53 @@
+{
+  "experiment": "pipeline_restoration_regression_v1",
+  "test_type": "functional_regression",
+  "independent_evaluation": false,
+  "total_cases": 4,
+  "safety_checks_passed": 4,
+  "verification_checks_passed": 3,
+  "results": [
+    {
+      "case_id": "PIPE01",
+      "expected_safety": "CLEAR_BY_RULES",
+      "observed_safety": "CLEAR_BY_RULES",
+      "expected_verification": "SUPPORTED",
+      "observed_verification": "NOT_VERIFIED",
+      "safety_check_passed": true,
+      "verification_check_passed": false
+    },
+    {
+      "case_id": "PIPE02",
+      "expected_safety": "CLEAR_BY_RULES",
+      "observed_safety": "CLEAR_BY_RULES",
+      "expected_verification": "RETRIEVAL_TOO_WEAK",
+      "observed_verification": "RETRIEVAL_TOO_WEAK",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    },
+    {
+      "case_id": "PIPE03",
+      "expected_safety": "URGENT_SAFETY_REVIEW",
+      "observed_safety": "URGENT_SAFETY_REVIEW",
+      "expected_verification": "SKIPPED_FOR_SAFETY_REVIEW",
+      "observed_verification": "SKIPPED_FOR_SAFETY_REVIEW",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    },
+    {
+      "case_id": "PIPE04",
+      "expected_safety": "CLEAR_BY_RULES",
+      "observed_safety": "CLEAR_BY_RULES",
+      "expected_verification": "NOT_VERIFIED",
+      "observed_verification": "NOT_VERIFIED",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    }
+  ],
+  "limitations": [
+    "Only four manually constructed functional cases",
+    "Not an independent evaluation benchmark",
+    "Phrase-based safety checks may miss unfamiliar wording",
+    "The knowledge base is a small prototype",
+    "Retrieval threshold is exploratory"
+  ]
+}

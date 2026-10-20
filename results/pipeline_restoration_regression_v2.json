@@ -1,0 +1,53 @@
+{
+  "experiment": "pipeline_restoration_regression_v2",
+  "test_type": "functional_regression",
+  "independent_evaluation": false,
+  "total_cases": 4,
+  "safety_checks_passed": 4,
+  "verification_checks_passed": 4,
+  "results": [
+    {
+      "case_id": "PIPEV2_01",
+      "expected_safety": "CLEAR_BY_RULES",
+      "observed_safety": "CLEAR_BY_RULES",
+      "expected_verification": "SUPPORTED",
+      "observed_verification": "SUPPORTED",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    },
+    {
+      "case_id": "PIPEV2_02",
+      "expected_safety": "CLEAR_BY_RULES",
+      "observed_safety": "CLEAR_BY_RULES",
+      "expected_verification": "RETRIEVAL_TOO_WEAK",
+      "observed_verification": "RETRIEVAL_TOO_WEAK",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    },
+    {
+      "case_id": "PIPEV2_03",
+      "expected_safety": "URGENT_SAFETY_REVIEW",
+      "observed_safety": "URGENT_SAFETY_REVIEW",
+      "expected_verification": "SKIPPED_FOR_SAFETY_REVIEW",
+      "observed_verification": "SKIPPED_FOR_SAFETY_REVIEW",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    },
+    {
+      "case_id": "PIPEV2_04",
+      "expected_safety": "CLEAR_BY_RULES",
+      "observed_safety": "CLEAR_BY_RULES",
+      "expected_verification": "NOT_VERIFIED",
+      "observed_verification": "NOT_VERIFIED",
+      "safety_check_passed": true,
+      "verification_check_passed": true
+    }
+  ],
+  "limitations": [
+    "Only four manually constructed functional cases",
+    "The supported case uses synthetic test evidence",
+    "Expected outcomes are not independent ground truth",
+    "Phrase-based safety checks are not clinically validated",
+    "Retrieval threshold remains exploratory"
+  ]
+}

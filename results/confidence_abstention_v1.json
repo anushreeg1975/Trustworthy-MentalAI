@@ -1,0 +1,45 @@
+{
+  "experiment": "confidence_based_abstention_v1",
+  "dataset": "KHP Youth Mental Health Safety Guardrail",
+  "split": "validation",
+  "language": "en",
+  "n_examples": 101,
+  "calibration_method": "sigmoid",
+  "thresholds_exploratory": true,
+  "results": [
+    {
+      "abstention_band": "0.40\u20130.60",
+      "review_count": 11,
+      "review_percent": 10.9,
+      "automatic_decision_coverage_percent": 89.1,
+      "accuracy_on_automatic_decisions": 0.889,
+      "high_risk_cases_abstained": 2,
+      "high_risk_cases_missed_among_automatic_decisions": 5
+    },
+    {
+      "abstention_band": "0.30\u20130.70",
+      "review_count": 21,
+      "review_percent": 20.8,
+      "automatic_decision_coverage_percent": 79.2,
+      "accuracy_on_automatic_decisions": 0.95,
+      "high_risk_cases_abstained": 7,
+      "high_risk_cases_missed_among_automatic_decisions": 2
+    },
+    {
+      "abstention_band": "0.20\u20130.80",
+      "review_count": 30,
+      "review_percent": 29.7,
+      "automatic_decision_coverage_percent": 70.3,
+      "accuracy_on_automatic_decisions": 0.972,
+      "high_risk_cases_abstained": 10,
+      "high_risk_cases_missed_among_automatic_decisions": 1
+    }
+  ],
+  "limitations": [
+    "Synthetic benchmark; not clinical validation",
+    "Small English validation subset",
+    "Abstention thresholds are exploratory",
+    "Accuracy is measured only on automatic decisions",
+    "Human review workflow has not been evaluated"
+  ]
+}

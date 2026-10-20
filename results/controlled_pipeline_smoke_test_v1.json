@@ -1,0 +1,19 @@
+{
+  "experiment": "controlled_pipeline_smoke_test_v1",
+  "timestamp_utc": "2026-10-20T16:57:28.232591+00:00",
+  "test_type": "functional_smoke_test",
+  "independent_evaluation": false,
+  "case_id": "CONTROLLED01",
+  "claim": "Someone is asleep.",
+  "status": "SUPPORTED",
+  "nli_prediction": "ENTAILMENT",
+  "similarity": 0.9216210842132568,
+  "nli_executed": true,
+  "passed": true,
+  "limitations": [
+    "Uses a manually constructed test knowledge base",
+    "Tests a straightforward paraphrase only",
+    "Does not measure general verification accuracy",
+    "Does not validate mental-health evidence"
+  ]
+}

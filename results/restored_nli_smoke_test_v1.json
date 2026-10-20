@@ -1,0 +1,28 @@
+{
+  "experiment": "restored_nli_smoke_test_v1",
+  "test_type": "functional_smoke_test",
+  "independent_evaluation": false,
+  "results": [
+    {
+      "case_id": "RESTORE01",
+      "expected_status": "SUPPORTED",
+      "predicted_status": "SUPPORTED",
+      "nli_prediction": "ENTAILMENT",
+      "functional_check_passed": true
+    },
+    {
+      "case_id": "RESTORE02",
+      "expected_status": "NOT_VERIFIED",
+      "predicted_status": "NOT_VERIFIED",
+      "nli_prediction": "NEUTRAL",
+      "functional_check_passed": true
+    },
+    {
+      "case_id": "RESTORE03",
+      "expected_status": "NOT_VERIFIED",
+      "predicted_status": "NOT_VERIFIED",
+      "nli_prediction": "NEUTRAL",
+      "functional_check_passed": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "experiment": "controlled_nli_diagnostic_v1",
+  "timestamp_utc": "2026-10-20T16:35:44.245545+00:00",
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "number_of_examples": 4,
+  "correct_predictions": 2,
+  "observed_accuracy": 0.5,
+  "cases": [
+    {
+      "name": "Clear entailment",
+      "expected": "ENTAILMENT",
+      "predicted": "ENTAILMENT",
+      "correct": true
+    },
+    {
+      "name": "Clear contradiction",
+      "expected": "CONTRADICTION",
+      "predicted": "CONTRADICTION",
+      "correct": true
+    },
+    {
+      "name": "Clear neutral",
+      "expected": "NEUTRAL",
+      "predicted": "CONTRADICTION",
+      "correct": false
+    },
+    {
+      "name": "Research claim",
+      "expected": "ENTAILMENT",
+      "predicted": "NEUTRAL",
+      "correct": false
+    }
+  ],
+  "limitations": [
+    "Only four manually constructed diagnostic examples",
+    "Not an independent benchmark",
+    "Expected labels are provisional human judgments",
+    "Softmax scores are not calibrated confidence estimates",
+    "Results do not establish general NLI model accuracy"
+  ]
+}

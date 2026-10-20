@@ -1,0 +1,34 @@
+{
+  "dataset": "KHP Youth Mental Health Safety Guardrail",
+  "split": "validation",
+  "language": "en",
+  "n_conversations": 101,
+  "models": {
+    "phrase_rules": {
+      "accuracy": 0.505,
+      "precision_label_1": 0.7143,
+      "recall_label_1": 0.0943,
+      "f1_label_1": 0.1667,
+      "true_negative": 46,
+      "false_positive": 2,
+      "false_negative": 48,
+      "true_positive": 5
+    },
+    "tfidf_logistic_regression": {
+      "accuracy": 0.8614,
+      "precision_label_1": 0.8679,
+      "recall_label_1": 0.8679,
+      "f1_label_1": 0.8679,
+      "true_negative": 41,
+      "false_positive": 7,
+      "false_negative": 7,
+      "true_positive": 46
+    }
+  },
+  "limitations": [
+    "Synthetic dataset; not clinical validation",
+    "Conversation-level labels are compared with extracted user/person turns",
+    "Results are for the English validation subset only",
+    "Source distributions and difficulty vary"
+  ]
+}
