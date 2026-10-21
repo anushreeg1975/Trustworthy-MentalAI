@@ -28,7 +28,7 @@
       "expected": "SUPPORTED",
       "predicted": "PARTIALLY_SUPPORTED",
       "correct": false,
-      "explanation": "The evidence supports the idea that feeling overwhelmed is related to difficulty coping, but it specifically mentions 'current demands' which may not be the same as 'current situation' or 'overall situation'. The claim is partially supported, but the wording is not identical."
+      "explanation": "The evidence supports the idea that feeling overwhelmed is related to difficulty coping, but it specifically mentions 'current demands' which may not be the same as the claim's 'current demands'."
     },
     {
       "case_id": "V08",
@@ -44,7 +44,7 @@
       "expected": "SUPPORTED",
       "predicted": "PARTIALLY_SUPPORTED",
       "correct": false,
-      "explanation": "The evidence supports the claim that stress can affect emotional well-being and daily functioning, but it does not address the scope of the claim (i.e., it does not mention stress as a common response to all types of challenging situations)."
+      "explanation": "The evidence supports the claim that stress can affect emotional well-being and daily functioning, but it does not address the scope of the claim (i.e., it does not mention stress affecting adults or other groups)."
     },
     {
       "case_id": "V10",
@@ -60,7 +60,7 @@
       "expected": "PARTIALLY_SUPPORTED",
       "predicted": "UNSUPPORTED",
       "correct": false,
-      "explanation": "The evidence does not establish that feeling overwhelmed directly proves the person has a mental disorder. The evidence only mentions that feeling overwhelmed can be a sign of difficulty coping, and a supportive response should avoid making a diagnosis based on a single conversation."
+      "explanation": "The evidence does not establish that feeling overwhelmed directly proves the person has a mental disorder. The evidence only mentions that feeling overwhelmed can be a sign of difficulty coping, but it does not provide evidence that this is a definitive indicator of a mental disorder."
     },
     {
       "case_id": "V12",
