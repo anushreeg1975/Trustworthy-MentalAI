@@ -28,7 +28,7 @@
       "expected": "SUPPORTED",
       "predicted": "PARTIALLY_SUPPORTED",
       "correct": false,
-      "explanation": "The evidence supports the idea that feeling overwhelmed is related to difficulty coping, but it specifically mentions 'current demands' which may not be the same as the claim's 'current demands'."
+      "explanation": "The evidence supports the idea that feeling overwhelmed is related to difficulty coping, but it specifically mentions 'a young person', which limits the scope of the claim to this demographic."
     },
     {
       "case_id": "V08",
@@ -36,7 +36,7 @@
       "expected": "UNSUPPORTED",
       "predicted": "UNSUPPORTED",
       "correct": true,
-      "explanation": "The evidence does not establish that the user has depression, as it only advises against making a diagnosis based on a single conversation, without providing any information about the user's symptoms or condition."
+      "explanation": "The evidence does not establish that the user has depression, as it only mentions avoiding making a diagnosis based on a single conversation, without providing any information about the user's mental state or symptoms."
     },
     {
       "case_id": "V09",
@@ -44,7 +44,7 @@
       "expected": "SUPPORTED",
       "predicted": "PARTIALLY_SUPPORTED",
       "correct": false,
-      "explanation": "The evidence supports the claim that stress can affect emotional well-being and daily functioning, but it does not address the scope of the claim (i.e., it does not mention stress affecting adults or other groups)."
+      "explanation": "The evidence supports the claim that stress can affect emotional well-being and daily functioning, but it does not address the scope of the claim (i.e., it only mentions 'young people')."
     },
     {
       "case_id": "V10",
@@ -68,7 +68,7 @@
       "expected": "CONTRADICTED",
       "predicted": "UNSUPPORTED",
       "correct": false,
-      "explanation": "The evidence states that difficulty sleeping can occur during periods of stress, which implies that stress can negatively impact sleep. However, the claim states that stress never affects sleep, which is directly contradicted by the evidence."
+      "explanation": "The evidence states that difficulty sleeping can occur during periods of stress, which implies that stress can indeed affect sleep. However, the claim states that stress never affects sleep, which is directly contradicted by the evidence."
     }
   ],
   "limitations": [
